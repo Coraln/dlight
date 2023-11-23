@@ -4,7 +4,7 @@
 
     // Languages
     document.addEventListener("DOMContentLoaded", function () {
-        const languageButtons = document.querySelectorAll(".language-switcher button");
+        const languageButtons = document.querySelectorAll(".flag-button");
 
         languageButtons.forEach((button) => {
             button.addEventListener("click", function () {
@@ -17,18 +17,34 @@
 
 
     function loadLanguage(lang) {
+        console.log("Loading language:", lang);
         fetch(`lang/${lang}.json`)
             .then((response) => response.json())
             .then((data) => {
 
+                console.log("Data loaded:", data);
+
                 // Update main content
                 document.getElementById("headerTitle").textContent = data.headerTitle;
+
+                document.getElementById("aboutInfoText").textContent = data.aboutInfoText;
+
                 document.getElementById("aboutFirstH3").textContent = data.aboutFirstH3;
                 document.getElementById("aboutSecondH3").textContent = data.aboutSecondH3;
                 document.getElementById("aboutText").textContent = data.aboutText;
                 document.getElementById("aboutText2").textContent = data.aboutText2;
 
-                document.getElementById("lifeSummary").textContent = data.lifeSummary;
+                document.getElementById("contactBtnText").textContent = data.contactBtnText;
+                document.getElementById("presentationBtnText").textContent = data.presentationBtnText;
+
+                document.getElementById("footInfo").textContent = data.footInfo;
+
+                /*document.getElementById("lifeSummary").textContent = data.lifeSummary;
+
+                const lifeSummaryElements = document.querySelectorAll(".life-summary");
+                lifeSummaryElements.forEach((element) => {
+                    element.textContent = data.lifeSummary;
+                });*/
             })
             .catch((error) => console.error("Error loading language:", error));
     }

@@ -4,7 +4,6 @@
 <head>
 
 
-    <script src="js/scipt.js" defer></script>
 
 
     <meta charset="utf-8">
@@ -70,10 +69,8 @@
                     </div>
                 </div>
             </div>
-            <div class="language-switcher">
                 <a id="sv" href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">SVENSKA<i
                         class="fa fa-arrow-right ms-3"></i></a>
-            </div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -83,8 +80,7 @@
     <!-- Header Start -->
 
     <div class="midImage wow fadeIn" data-wow-delay="0.5s">
-        <img class="bannerImg" src="img/banner.jpg"
-            alt="Snow">
+        <img class="bannerImg" src="img/banner.jpg" alt="Snow">
         <div class="centeredIma">
             <h1 id="headerTitle" class="display-1 text-white mb-0"></h1>
         </div>
@@ -94,11 +90,17 @@
 
 
     <div class="language-switcher">
-        <button id="en">English</button>
-        <button id="sv">Svenska</button>
+        <div class="flag-button" id="en">
+            <img src="/img/uk-flag.png" alt="English Flag">
+            <span>English</span>
+        </div>
+        <div class="flag-button" id="sv">
+            <img src="/img/swedish-flag.jpg" alt="Swedish Flag">
+            <span>Svenska</span>
+        </div>
     </div>
 
-    
+
 
 
     <!-- About Start -->
@@ -113,13 +115,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">About the project</p>
-                    <h3 id="aboutFirstH3" class="mb-4">df</h3>
+                    <p id="aboutInfoText" class="d-inline-block border rounded-pill py-1 px-4"></p>
+                    <h3 id="aboutFirstH3" class="mb-4"></h3>
                     <h3 id="aboutSecondH3" class="mb-4"></h3>
                     <p id="aboutText"></p>
                     <p id="aboutText2"></p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Contact</a>
-                    <a class="btn btn-outline-primary rounded-pill py-3 px-5 custom-btn" href="">Presentation of the Project</a>
+                    <a id="contactBtnText" class="btn btn-primary rounded-pill py-3 px-5" href=""></a>
+                    <a id="presentationBtnText" class="btn btn-outline-primary rounded-pill py-3 px-5 custom-btn"
+                        href=""></a>
                 </div>
             </div>
         </div>
@@ -132,7 +135,7 @@
     <div class="container-fluid bg-dark text-light footer mt-3 pt-3 wow fadeIn">
 
         <div class="container">
-            <p class="text-center py-4">This webbpage is a digital showcase developed by Prakticum, that is a part of the D-LIGHT Network that is a partnership</p>
+            <p id="footInfo" class="text-center py-4"></p>
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">

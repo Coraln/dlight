@@ -11,10 +11,20 @@
     "page1Description": "This is the content for Page 1.",
 
 
-    "headerTitle": "!!Person-Centered activities in daily life",
+    "headerTitle": "Personcenterade aktiviteter i äldres vardag",
 
-    "aboutFirstH3": "!!Do you see a need to increase the knowledge of how you can easily implement Sense of coherence (SOC) in to homecare for senior citizants today?",
-    "aboutSecondH3": "!!Do you want to guide an support eldelry in person-centred activities with meaningful choices in everyday life?",
-    "aboutText": "!!This webbpage is a digital showcase that is a part of the D-LIGHT Network that is a partnership between SOSU Nord (Denmark), Tallinn Health Care College (Estonia), Yrkesinstitutet Prakticum (Finland), ROC da Vinci College (the Netherlands), and Calasanz Santurtzi S.L. (Spain/Euskadi).​",
-    "aboutText2": "!!Together, we identify innovative digital learning solutions to shared European challenges in preparing for tomorrow’s Care and Rehabilitation Services for Senior Citizens."
+    "aboutInfoText": "Om projektet",
+
+    "aboutFirstH3": "Vill du veta mer om hur man enkelt kan implementera Känsla av Sammanhang (KASAM) i hemvården för äldre idag?",
+    "aboutSecondH3": "Vill du guida och stödja den äldre i personcentrerade aktiviteter med meningsfulla val i vardagen?",
+    "aboutText": "Denna webbsida är ett digitalt läromaterial som är en del av D-LIGHT Network  som är ett projekt mellan SOSU Nord (Danmark), Tallinn Health Care College (Estland), Yrkesinstitutet Prakticum (Finland), ROC da Vinci College (Nederländerna) och Calasanz Santurtzi S.L. (Spanien/Euskadi).​",
+    "aboutText2": "Tillsammans identifierar vi nya digitala lösningar för lärande av gemensamma europeiska behov gällandemorgondagens vård- och rehabiliteringstjänster för äldre.",
+
+    "contactBtnText": "Kontakt",
+    "presentationBtnText": "Presentation av Projektet",
+
+    "footInfo": "Denna webbsida är ett digitalt läromaterial utvecklat av Prakticum, som är en del av D-LIGHT Network",
+
+
+    "lifeSummary": "Nummer 1, <br> nummer 2, <br> nummer 3, <br>"
 }

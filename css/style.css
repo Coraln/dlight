@@ -324,6 +324,30 @@
     width: 140px;
 }
 
+/*** Languages ***/
+.language-switcher {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flag-button {
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .flag-button img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .flag-button span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+  }
 
 /*** Feature ***/
 @media (min-width: 992px) {
@@ -521,6 +545,35 @@
     color: var(--dark);
 }
 
+
+
+/*** Triangle ***/
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid #3498db;
+    position: relative;
+    margin-top: 30px;
+}
+
+#activityList {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.activity-button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {
