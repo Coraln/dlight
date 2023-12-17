@@ -1,8 +1,12 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0463FA;
+    --primary: #fab804;
     --light: #EFF5FF;
     --dark: #1B2C51;
+}
+
+.bg-primary {
+    background-color: var(--primary);
 }
 
 .fw-medium {
@@ -25,6 +29,28 @@
     z-index: 99;
 }
 
+/** TILLFÄLLIGT */
+.audioPlayer {
+    width: 500px;
+    height: 300px;
+
+    background-size: cover;
+    position: relative;
+}
+
+.audioPlayer audio {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.fannyAudio {
+    background-image: url('/img/fanny.jpg');
+}
+
+.chrisAudio {
+    background-image: url('/img/chris.jpg');
+}
 
 /*** Spinner ***/
 #spinner {
@@ -178,11 +204,24 @@
     display: flex;
     height: 130px;
     width: 100%;
-    background-color: #1B2C51;
     justify-content: center;
     text-align: center;
     align-items: center;
     padding: 20px;
+}
+
+.containerBoxBlue {
+    background-color: #1B2C51;
+}
+
+.containerBoxGreen {
+    background-color: #2ea245;
+}
+
+.containerBoxMain {
+    background-color: #1B2C51;
+    height: auto;
+    padding: 0px;
 }
 
 .containerBox h4 {
@@ -326,28 +365,30 @@
 
 /*** Languages ***/
 .language-switcher {
-    padding-top: 50px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
-  }
-  
-  .flag-button {
+}
+
+.flag-button {
     text-align: center;
     margin: 0 10px;
     cursor: pointer;
-  }
-  
-  .flag-button img {
-    width: 200px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .flag-button span {
+}
+
+.flag-button img {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.flag-button span {
     display: block;
     margin-top: 5px;
     font-size: 16px;
     color: #333;
-  }
+}
 
 /*** Feature ***/
 @media (min-width: 992px) {
@@ -546,6 +587,35 @@
 }
 
 
+/*** Checkboxes triangle ***/
+.checkbox-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.category-checkbox {
+    position: relative;
+    margin-left: 8px;
+    /* Adjust the margin as needed */
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+/* Style the checked state */
+input[type="checkbox"]:checked+i {
+    color: #007bff;
+    /* Change the color as needed */
+}
+
+
+
+
+
+
 
 /*** Triangle ***/
 #triangle {
@@ -574,6 +644,161 @@
     display: inline-block;
     text-decoration: none;
 }
+
+/*** Triangle NEW ***/
+.parent {
+    position: relative;
+    margin-top: 2rem;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    height: fit-content;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.one {
+    transform: rotate(237deg);
+    top: 288px;
+    left: 23px;
+    width: 205px;
+}
+
+.sec {
+    transform: rotate(123deg);
+    right: 22px;
+    top: 287px;
+
+    width: 205px;
+}
+
+.in {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.in1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.in2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.zero {
+    left: 50%;
+    top: 118px;
+    transform: translateX(-50%);
+    width: 205px;
+}
+
+.a {
+    color: #333;
+    position: absolute;
+    top: -39px;
+    left: 45%;
+    font-weight: 600;
+
+}
+
+.f {
+    color: #333;
+    position: absolute;
+    right: -61px;
+    bottom: 84px;
+    font-weight: 600;
+}
+
+.t {
+    color: #333;
+    position: absolute;
+    bottom: 84px;
+    left: -18px;
+    font-weight: 600;
+}
+
+.ap {
+    background: black;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    height: 4px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width:700px) {
+    .parent {
+        width: 70%;
+    }
+
+    .imi {
+        width: 100%;
+    }
+
+    .imparent {
+        width: 220px !important;
+    }
+
+    .zero {
+        left: 50%;
+        top: 66px;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+
+    .sec {
+        width: 93px;
+        right: 14px;
+        top: 142px;
+    }
+
+    .one {
+        width: 93px;
+        top: 142px;
+        left: 14px;
+    }
+
+    .a {
+        top: -36px !important;
+        left: 39% !important;
+
+    }
+
+    .f {
+        right: -10px;
+        bottom: 0px;
+        font-style: 0.8rem;
+        font-weight: 600;
+    }
+
+    .t {
+        bottom: 0px;
+        left: -10px;
+        font-style: 0.8rem;
+        font-weight: 600;
+    }
+}
+
 
 /*** Footer ***/
 .footer .btn.btn-social {

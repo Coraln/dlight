@@ -62,14 +62,6 @@ import('./activities.js').then(module => {
         return filteredActivities;
     }
 
-    /*
-    function filterActivitiesBySliders(activities, selectedTime, selectedActivity, selectedFellowship) {
-        return activities.filter(activity =>
-            activity.time === selectedTime &&
-            activity.activity === selectedActivity &&
-            activity.fellowship === selectedFellowship
-        );
-    }*/
 
     // Function to filter activities based on sliders (time, activity, fellowship)
     function filterActivitiesBySliders(activities, selectedTime, selectedActivity, selectedFellowship) {
@@ -99,13 +91,6 @@ import('./activities.js').then(module => {
         const selectedFellowship = parseInt(fellowshipSlider.value);
 
         const selectedCategories = [];
-
-        /*checkboxIds.forEach(category => {
-            const checkbox = document.getElementById(`${category}Checkbox`);
-            if (checkbox.checked) {
-                selectedCategories.push(category);
-            }
-        });*/
 
         if (movementCheckbox.checked) {
             selectedCategories.push("movement");
