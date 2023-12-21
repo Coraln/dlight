@@ -1,16 +1,5 @@
 // activities.js
 const activities = {
-    games: [
-        { name: "Naturebingo", activity: 2, fellowship: 2, time: 2 },
-        // Add more game activities
-    ],
-
-    exercise: [
-        { name: "Exercises in nature", activity: 2, fellowship: 2, time: 2 },
-        { name: "By the bonfire", activity: 1, fellowship: 2, time: 2 },
-        { name: "Enjoy and discuss the view together", activity: 1, fellowship: 2, time: 2 },
-        // Add more exercise activities
-    ],
 
     
     movement: [
@@ -147,7 +136,6 @@ const activities = {
         { name: "Theatre", activity: 2, fellowship: 2, time: [2] },
         { name: "Movie", activity: 2, fellowship: 1, time: [2] },
         { name: "Masquerade", activity: 2, fellowship: 2, time: [2] },
-        { name: "Look at classical concert on TV", activity: 1, fellowship: 1, time: [2] },
         { name: "Travelling digitally", activity: 2, fellowship: 1, time: [2] },
         { name: "Travelling in the neighborhood", activity: 2, fellowship: 2, time: [2] },
         { name: "Participate in an art exhibition virtually", activity: 2, fellowship: 1, time: [2] },

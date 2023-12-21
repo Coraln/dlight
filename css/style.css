@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #fab804;
+    --primary: #467bec;
     --light: #EFF5FF;
     --dark: #1B2C51;
 }
@@ -31,11 +31,15 @@
 
 /** TILLFÄLLIGT */
 .audioPlayer {
-    width: 500px;
-    height: 300px;
-
+    max-width: 100%;
+    margin: 30px;
+    height: 500px;
+    justify-content: center;
     background-size: cover;
     position: relative;
+    display: flex; /* Add this to make it a flex container */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center items horizontally */
 }
 
 .audioPlayer audio {
@@ -211,17 +215,18 @@
 }
 
 .containerBoxBlue {
-    background-color: #1B2C51;
+    background-color: #467bec;
 }
 
 .containerBoxGreen {
-    background-color: #2ea245;
+    background-color: #609248;
 }
 
 .containerBoxMain {
-    background-color: #1B2C51;
+    background-color: #467bec;
     height: auto;
     padding: 0px;
+    display: block;
 }
 
 .containerBox h4 {
@@ -328,7 +333,7 @@
 }
 
 .header-meaningful {
-    background: url(../img/lifehistory.jpg) top center no-repeat;
+    background: url(../img/bannerMeaningful.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -749,6 +754,7 @@ input[type="checkbox"]:checked+i {
 @media (max-width:700px) {
     .parent {
         width: 70%;
+        padding-top: 10%;
     }
 
     .imi {

@@ -49,7 +49,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary">Meaningfulness</h2>
+            <h3 class="m-0 text-primary">Meaningfulness</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -66,7 +66,6 @@
                     </div>
 
                 </div>
-                <a href="index.html" class="nav-item nav-link active">Svenska</a>
             </div>
             <!--<div class="language-switcher">
                 <a id="sv" href="index.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">HOME<i
@@ -80,7 +79,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header header-meaningful py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Meaningful activities</h1>
+            <h1 class="display-5 text-white mb-0">Meaningful activities</h1>
         </div>
     </div>
 
@@ -227,8 +226,10 @@
 
 
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 pt-3 pb-3">
+        <div class="container pb-5 pt-3">
+            <div class="row g-1">
+                <h6> LISTEN TO THE PERSON</h6>
+                <p>Click on the person and listen: How does the person feel today?</p>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="audioPlayer chrisAudio">
                         <audio controls='controls'>
@@ -321,14 +322,15 @@
                     <div class="d-flex flex-column">
                         <p>Based on the person´s mood today, what is important for the person? <br><br>
 
-                            When you have taken into account the persons mood, the webbpage will filter the activities by chosen parameters.<br><br>
-                            
+                            When you have taken into account the persons mood, the webbpage will filter the activities
+                            by chosen parameters.<br><br>
+
                             Get suitable activities by clicking on the parameters:</p>
-                            <ul>
-                                <li><b>short</b> or <b>long</b> time</li>
-                                <li><b>alone</b> or <b>together</b></li>
-                                <li><b>activating</b> or <b>calming</b></li>
-                            </ul>
+                        <ul>
+                            <li><b>short</b> (1) or <b>long</b> (2) time</li>
+                            <li><b>alone</b> (1) or <b>together</b> (2)</li>
+                            <li><b>activating</b> (1) or <b>calming</b> (2)</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -336,33 +338,34 @@
                     <div class="d-flex flex-column">
                         <div class="parent">
                             <div class="imparent" style="position: relative; width: fit-content; height: fit-content;">
-                    
+
                                 <p class="a">Activity</p>
                                 <p class="t">Time</p>
                                 <p class="f">Fellowship</p>
                                 <img class="imi" src="img/pic.png" alt="">
-                    
+
                                 <!-- one -->
                                 <div class="rectangle zero" id="button0">
                                     <div style="width: 100%; position: relative;">
-                                        <input class="ap slider" id="activitySlider" style="transform: rotate(-90deg);" type="range"
-                                            min="0" max="2" step="1" value="0">
+                                        <input class="ap slider" id="activitySlider" style="transform: rotate(-90deg);"
+                                            type="range" min="0" max="2" step="1" value="0">
                                     </div>
                                 </div>
-                    
+
                                 <!-- two -->
                                 <div class="rectangle one" id="button1">
                                     <div style=" width: 100%; position: relative;">
-                                        <input class="ap slider" id="timeSlider" style="transform: rotate(-90deg);" type="range" min="0"
-                                            max="2" step="1" value="0">
+                                        <input class="ap slider" id="timeSlider" style="transform: rotate(-90deg);"
+                                            type="range" min="0" max="2" step="1" value="0">
                                     </div>
                                 </div>
-                    
+
                                 <!-- three -->
                                 <div class="rectangle sec" id="button2">
                                     <div style=" width: 100%; position: relative;">
-                                        <input class="ap slider" id="fellowshipSlider" style="transform: rotate(-90deg);" type="range"
-                                            min="0" max="2" step="1" value="0">
+                                        <input class="ap slider" id="fellowshipSlider"
+                                            style="transform: rotate(-90deg);" type="range" min="0" max="2" step="1"
+                                            value="0">
                                     </div>
                                 </div>
                             </div>
@@ -372,7 +375,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- Triangle End -->
 
@@ -382,11 +385,23 @@
         </h4>
     </div>
 
-    <div class="container-xxl py-3">
-        <div id="activityList"></div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div>
+                    <p>Choose one activity, that you would suggest for the person.
+                        Download the PDF to your computer and submit it to your teacher
+                        with your own reflections included (why would you suggest
+                        this activity for the person?). </p>
+                    <p>Participate in a workshop where meaningful activities
+                        are presented and discussed. Your teacher will give
+                        you further information of the date and time
+                        for this workshop.</p>
+                </div>
+            </div>
+            <div id="activityList"></div>
+        </div>
     </div>
-
-    <br><br><br><br><br><br>
 
 
 
@@ -403,10 +418,10 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">nätsidans namn</a>, All Right Reserved.
+                        <!--&copy; <a class="border-bottom" href="#">nätsidans namn</a>, All Right Reserved.-->
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        blablabla
+                        <p></p>
                     </div>
                 </div>
             </div>
