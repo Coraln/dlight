@@ -123,7 +123,7 @@ import('./activities.js').then(module => {
         const filteredActivitiesBySliders = filterActivitiesBySliders(filteredActivities, selectedTime, selectedActivity, selectedFellowship);
 
         const activityList = filteredActivitiesBySliders.map(activity => {
-            const pdfPath = `pdf/sv/${activity.name}.pdf`;
+            const pdfPath = `pdf/en/${activity.name}.pdf`;
             return `<button class="activity-button" onclick="openPDF('${pdfPath}')">${activity.name}</button>`;
         });
 
