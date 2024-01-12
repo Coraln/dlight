@@ -1,30 +1,27 @@
 {
-    "home": "Hemmet",
-    "category": "Kategorier",
-    "page1": "Sida 1",
-    "page2": "Sida 2",
-    "page3": "Sida 3",
-
-    "contentTitle": "svenskaaa",
-    "contentDescription": "This is a sample web application with language switching.",
-    "page1Title": "Page 1 Title",
-    "page1Description": "This is the content for Page 1.",
-
+    "headerHome": "Hem",
+    "headerDropdown": "Meningsfulla aktiviteter",
+    "headerLife": "Livsberättelse",
+    "headerMeaningful": "Meningsfulla aktiviteter",
 
     "headerTitle": "Personcenterade aktiviteter i äldres vardag",
 
-    "aboutInfoText": "Om projektet",
+    "homeIntroHeading1": "Hur bra känner du den äldre personen?",
+    "homeIntroHeading2": "Hur säkerställer du att den äldre personen får uppleva meningsfulla aktiviteter idag?",
 
-    "aboutFirstH3": "Vill du veta mer om hur man enkelt kan implementera Känsla av Sammanhang (KASAM) i hemvården för äldre idag?",
-    "aboutSecondH3": "Vill du guida och stödja den äldre i personcentrerade aktiviteter med meningsfulla val i vardagen?",
-    "aboutText": "Denna webbsida är ett digitalt läromaterial som är en del av D-LIGHT Network  som är ett projekt mellan SOSU Nord (Danmark), Tallinn Health Care College (Estland), Yrkesinstitutet Prakticum (Finland), ROC da Vinci College (Nederländerna) och Calasanz Santurtzi S.L. (Spanien/Euskadi).​",
-    "aboutText2": "Tillsammans identifierar vi nya digitala lösningar för lärande av gemensamma europeiska behov gällandemorgondagens vård- och rehabiliteringstjänster för äldre.",
+    "homeIntoText": "Detta digitala läromaterial är utvecklat för att öka kunnandet om betydelsen av den äldres livshistoria i vårdarbetet samt hur man kan främja personens Känsla av Sammanhang (KASAM) med hjälp av meningsfulla aktiviteter i vardagen.",
+    "homeEnables": "Detta digitala läromedel stödjer studerandes/vårdpersonalens kunnande och färdigheter i: ",
 
-    "contactBtnText": "Kontakt",
-    "presentationBtnText": "Presentation av Projektet",
+    "homeList": [
+        "sdsincrease the understanding of a person-centered mindset",
+        "visualize what the person finds meaningful"
+    ],
 
-    "footInfo": "Denna webbsida är ett digitalt läromaterial utvecklat av Prakticum, som är en del av D-LIGHT Network",
+    "homeList1":"personcentrerat tankesätt",
+    "homeList2":"vad personen tycker är meningsfullt",
+    "homeList3":"att ta reda på nya saker som den äldre är intresserad av",
+    "homeList4":"hur man kan främja livskvalitet",
+    "homeList5":"meningsfulla aktiviteter i det dagliga livet",
 
-
-    "lifeSummary": "Nummer 1, <br> nummer 2, <br> nummer 3, <br>"
+    "footInfo": "Denna webbsida är ett digitalt läromaterial utvecklat av Prakticum, som är en del av D-LIGHT Network"
 }

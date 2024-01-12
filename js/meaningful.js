@@ -67,10 +67,13 @@ import('./activities.js').then(module => {
     function filterActivitiesBySliders(activities, selectedTime, selectedActivity, selectedFellowship) {
         const filteredActivities = activities.filter(activity => {
             const activityTime = Array.isArray(activity.time) ? activity.time : [activity.time];
+            const activityType = Array.isArray(activity.activity) ? activity.activity : [activity.activity];
+            const fellowshipType = Array.isArray(activity.fellowship) ? activity.fellowship : [activity.fellowship];
+    
             return (
                 activityTime.includes(selectedTime) &&
-                activity.activity === selectedActivity &&
-                activity.fellowship === selectedFellowship
+                activityType.includes(selectedActivity) &&
+                fellowshipType.includes(selectedFellowship)
             );
         });
 

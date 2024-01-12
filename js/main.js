@@ -25,29 +25,40 @@
                 console.log("Data loaded:", data);
 
                 // Update main content
+                document.getElementById("headerHome").textContent = data.headerHome;
+                document.getElementById("headerDropdown").textContent = data.headerDropdown;
+                document.getElementById("headerLife").textContent = data.headerLife;
+                document.getElementById("headerMeaningful").textContent = data.headerMeaningful;
+
                 document.getElementById("headerTitle").textContent = data.headerTitle;
-
-                document.getElementById("aboutInfoText").textContent = data.aboutInfoText;
-
-                document.getElementById("aboutFirstH3").textContent = data.aboutFirstH3;
-                document.getElementById("aboutSecondH3").textContent = data.aboutSecondH3;
-                document.getElementById("aboutText").textContent = data.aboutText;
-                document.getElementById("aboutText2").textContent = data.aboutText2;
-
-                document.getElementById("contactBtnText").textContent = data.contactBtnText;
-                document.getElementById("presentationBtnText").textContent = data.presentationBtnText;
-
+                document.getElementById("homeIntroHeading1").textContent = data.homeIntroHeading1;
+                document.getElementById("homeIntroHeading2").textContent = data.homeIntroHeading2;
+                document.getElementById("homeIntoText").textContent = data.homeIntoText;
+                document.getElementById("homeEnables").textContent = data.homeEnables;
                 document.getElementById("footInfo").textContent = data.footInfo;
 
-                /*document.getElementById("lifeSummary").textContent = data.lifeSummary;
+                document.getElementById("homeList1").textContent = data.homeList1;
+                document.getElementById("homeList2").textContent = data.homeList2;
+                document.getElementById("homeList3").textContent = data.homeList3;
+                document.getElementById("homeList4").textContent = data.homeList4;
+                document.getElementById("homeList5").textContent = data.homeList5;
 
-                const lifeSummaryElements = document.querySelectorAll(".life-summary");
-                lifeSummaryElements.forEach((element) => {
-                    element.textContent = data.lifeSummary;
-                });*/
+                // Handle list items
+                if (data.homeList && Array.isArray(data.homeList)) {
+                    const listContainer = document.getElementById('homeList'); // The container where the list should be rendered
+                    listContainer.innerHTML = ''; // Clear existing list items
+                    // Removed the creation of a new 'ul' since 'homeList' is already a 'ul'
+                    data.homeList.forEach(itemText => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = itemText;
+                        listContainer.appendChild(listItem); // Append listItem to listContainer directly
+                    });
+                }
+
             })
             .catch((error) => console.error("Error loading language:", error));
     }
+
 
 
 

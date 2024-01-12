@@ -1,23 +1,23 @@
 {
+    "headerHome": "Home",
+    "headerDropdown": "Person-centered activities",
+    "headerLife": "Life story",
+    "headerMeaningful": "Meaningful activities",
 
     "headerTitle": "Person-Centered activities in daily life",
+    "homeIntroHeading1": "How well do you know the elderly person?",
+    "homeIntroHeading2": "How do you make sure that the person can have meaningful activities today?",
+    "homeIntoText": "This digital learing solution is designed to promote the knowledge of how you can easily find out the elderly's life story and how to support the persons Sence of Coherense (SOC) with meaningful activities in daily life.",
+    "homeEnables": "It enables students and staff to:",
+    "homeList": [
+        "increase the understanding of a person-centered mindset",
+        "visualize what the person finds meaningful"
+    ],
+    "homeList1":"increase the understanding of a person-centered mindset",
+    "homeList2":"visualize what the person finds meaningful",
+    "homeList3":"find out new things that the person is interested in",
+    "homeList4":"quickly and easily support the person in components that promotes quality of life",
+    "homeList5":"encourage the person to attend in meaningful activities in daily life",
 
-    "aboutInfoText": "About the project",
-
-    "aboutFirstH3": "Do you see a need to increase the knowledge of how you can easily implement Sense of coherence (SOC) in to homecare for senior citizants today?",
-    "aboutSecondH3": "Do you want to guide an support eldelry in person-centred activities with meaningful choices in everyday life?",
-    "aboutText": "This webbpage is a digital showcase that is a part of the D-LIGHT Network that is a partnership between SOSU Nord (Denmark), Tallinn Health Care College (Estonia), Yrkesinstitutet Prakticum (Finland), ROC da Vinci College (the Netherlands), and Calasanz Santurtzi S.L. (Spain/Euskadi).​",
-    "aboutText2": "Together, we identify innovative digital learning solutions to shared European challenges in preparing for tomorrow’s Care and Rehabilitation Services for Senior Citizens.",
-
-    "contactBtnText": "Contact",
-    "presentationBtnText": "Presentation of the Project",
-    
-
-    "footInfo": "This webbpage is a digital showcase developed by Prakticum, that is a part of the D-LIGHT Network that is a partnership",
-    
-
-
-    
-    "lifeSummary": "Number 1, <br> nummer 2, <br> nummer 3, <br>"
-
+    "footInfo": "This webbpage is a digital showcase developed by Prakticum, that is a part of the D-LIGHT Network that is a partnership"
 }
