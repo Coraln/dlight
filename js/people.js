@@ -1,6 +1,6 @@
 const people = [
-    { name: 'Chris', imgSrc: 'img/chris.jpg', audioSrc: 'audio/Chris-audio.mp3' },
-    { name: 'Fanny', imgSrc: 'img/fanny.jpg', audioSrc: 'audio/Fanny-audio.mp3' },
+    { name: 'Chris', imgSrc: 'img/chris.jpg' },
+    { name: 'Fanny', imgSrc: 'img/fanny.jpg' },
     // Add more people here
   ];
   

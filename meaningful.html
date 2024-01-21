@@ -146,14 +146,6 @@
                 <div class="col-lg-9 wow fadeIn" data-wow-delay="0.5s">
                     <div class="icon-grid">
                         <div class="icon-row">
-
-
-
-
-
-
-
-
                             <div class="checkbox-container">
                                 <input type="checkbox" id="movementCheckbox" class="hidden-checkbox">
                                 <label for="movementCheckbox">
@@ -164,7 +156,8 @@
                             <div class="checkbox-container">
                                 <input type="checkbox" id="brainteasersCheckbox" class="hidden-checkbox">
                                 <label for="brainteasersCheckbox">
-                                    <img src="img/brainteasers.PNG" alt="Puzzles and brainteasers icon" class="icon-image">
+                                    <img src="img/brainteasers.PNG" alt="Puzzles and brainteasers icon"
+                                        class="icon-image">
                                     <div class="icon-label">Puzzles and brainteasers</div>
                                 </label>
                             </div>
@@ -182,45 +175,6 @@
                                     <div class="icon-label">Nature and environment</div>
                                 </label>
                             </div>
-
-
-
-
-
-
-
-                            <!-- First row of icons 
-                            <label class="checkbox-container" for="movementCheckbox">
-                                <img src="img/movement.PNG" alt="Movement & relaxation icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="movementCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Movement & relaxation
-                                </label>
-                            </label>
-
-                            <label class="checkbox-container" for="brainteasersCheckbox">
-                                <img src="img/brainteasers.PNG" alt="Puzzles and brainteasers icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="brainteasersCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Puzzles and brainteasers
-                                </label>
-                            </label>
-
-                            <label class="checkbox-container" for="foodCheckbox">
-                                <img src="img/food.PNG" alt="Food and beverages icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="foodCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Food and beverages
-                                </label>
-                            </label>
-
-                            <label class="checkbox-container" for="environmentCheckbox">
-                                <img src="img/environment.PNG" alt="Nature and environment icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="environmentCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Nature and environment
-                                </label>
-                            </label>-->
                         </div>
                         <div class="icon-row">
 
@@ -248,46 +202,15 @@
                             <div class="checkbox-container">
                                 <input type="checkbox" id="creativityCheckbox" class="hidden-checkbox">
                                 <label for="creativityCheckbox">
-                                    <img src="img/creativity.PNG" alt="Creativity and handicraft icon" class="icon-image">
+                                    <img src="img/creativity.PNG" alt="Creativity and handicraft icon"
+                                        class="icon-image">
                                     <div class="icon-label">Creativity and handicraft</div>
                                 </label>
                             </div>
-                            <!--
-                            <label class="checkbox-container" for="musicCheckbox">
-                                <img src="img/music.PNG" alt="Music icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="musicCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Music
-                                </label>
-                            </label>
-
-                            <label class="checkbox-container" for="literatureCheckbox">
-                                <img src="img/literature.PNG" alt="Literature icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="literatureCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Literature
-                                </label>
-                            </label>
-
-                            <label class="checkbox-container" for="entertainmentCheckbox">
-                                <img src="img/entertainment.PNG" alt="Entertainment icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="entertainmentCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Entertainment
-                                </label>
-                            </label>
-
-                            <label class="checkbox-container" for="creativityCheckbox">
-                                <img src="img/creativity.PNG" alt="Creativity and handicraft icon">
-                                <label class="category-checkbox">
-                                    <input type="checkbox" id="creativityCheckbox" class="hidden-checkbox">
-                                    <i class="far fa-check-square"></i> Creativity and handicraft
-                                </label>
-                            </label>-->
                         </div>
                     </div>
                 </div>
-                
+
 
 
 
@@ -372,33 +295,30 @@
         </h4>
     </div>
 
+    <!--
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <div id="people-container" class="row g-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
 
     <div class="container-xxl py-5">
         <div class="container pb-5 pt-3">
             <div class="row g-1">
                 <h6> LISTEN TO THE PERSON</h6>
                 <p>Click on the persons play button and listen: How does the person feel today?</p>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="audioPlayer chrisAudio">
-                        <audio controls='controls'>
-                            <source src='audioToday/Chris-audio.mp3' type='audio/mp3'>
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
-                        <div class="audioPlayer fannyAudio">
-                            <audio controls='controls'>
-                                <source src='audioToday/Fanny-audio.mp3' type='audio/mp3'>
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
+                        <!-- Container where people boxes will be appended -->
+                        <div id="people-container" class="row g-3"></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -460,7 +380,6 @@
     <!-- About End -->
 
 
-
     <!-- Triangle Start -->
 
     <div class="container-xxl py-5">
@@ -493,7 +412,7 @@
                                     </div>
                                 </div>
                             </div> <!-- End of the first row -->
-                        
+
                             <!-- New row -->
                             <div class="row text-center icon-container">
                                 <div class="col">
@@ -510,7 +429,7 @@
                                     </div>
                                 </div>
                             </div> <!-- End of the second row -->
-                        
+
                             <!-- New row -->
                             <div class="row text-center icon-container">
                                 <div class="col">
@@ -539,7 +458,7 @@
                                 <p class="a">Activity</p>
                                 <p class="t">Time</p>
                                 <p class="f">Fellowship</p>
-                                <img class="imi" src="img/pic1.png" alt="">
+                                <img class="imi" src="img/triangleFinal.png" alt="">
 
                                 <!-- one -->
                                 <div class="rectangle zero" id="button0">
@@ -608,7 +527,6 @@
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-3 pt-3 wow fadeIn">
-
         <div class="container text-center">
             <p class="py-4">The webpage which was developed by Yrkesinstitutet Prakticum, is a digital
                 showcase within the D-LIGHT Network partnership.</p>
@@ -617,37 +535,49 @@
                     authors: Freepik,
                     fjstudio, Pixel perfect, Kalashnyk, SBTS2018 & Andrejs Kirma</a>
                 <p>HTML template license by <a href="https://htmlcodex.com/">HTML Codex</a></p>
+                <div class="row g-5 p-4">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p>All material on this website is protected by copyright but is available for download
+                            and use by anyone in accordance with the EU's Erasmus program. You are welcome to use
+                            the material for non-commercial purposes, provided you respect the applicable copyright
+                            rules.</p>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p>We encourage the distribution and sharing of our material to benefit education and
+                            knowledge exchange across the entire EU. If you have any questions or need further
+                            information, please contact us.</p>
+                    </div>
+                </div>
                 <div class="p-2">
-                    &copy;<a class="border-bottom" href="#">Ägarens namn</a>, All Right Reserved.
+                    &copy;<a class="border-bottom" href="https://prakticum.fi/"> Prakticum <span
+                            id="current-year"></span></a>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- Footer End -->
+        <!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+                class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <script src="js/people.js"></script>
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/meaningful.js"></script>
+        <script src="js/people.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/meaningful.js"></script>
 </body>
 
 </html>

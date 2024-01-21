@@ -1,3 +1,21 @@
- => FREE icons by
+## The webpage which was developed by Yrkesinstitutet Prakticum, is a digital showcase within the D-LIGHT Network partnership.
+
+## All material on this website is protected by copyright but is available for download and use by anyone in accordance with the EU's Erasmus program. You are welcome to use the material for non-commercial purposes, provided you respect the applicable copyright rules.
+
+## We encourage the distribution and sharing of our material to benefit education and knowledge exchange across the entire EU. If you have any questions or need further information, please contact us
+
+## The project is open-source, and can be viewed or downloaded freely from 
+    https://github.com/Coraln/dlight/tree/main
+
+
+ => FREE icons by by Flaticon and creted by the following authors: Freepik, fjstudio, Pixel perfect, Kalashnyk, SBTS2018 & Andrejs Kirma
+
+    // https://www.flaticon.com/  
 
  => FREE HTML TEMPLATE LICENSE BY HTML Codex
+
+    //  Template License : https://htmlcodex.com/license
+
+    //  Template Author  : HTML Codex
+
+    //  Author Website   : https://htmlcodex.com

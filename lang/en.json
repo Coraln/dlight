@@ -7,17 +7,80 @@
     "headerTitle": "Person-Centered activities in daily life",
     "homeIntroHeading1": "How well do you know the elderly person?",
     "homeIntroHeading2": "How do you make sure that the person can have meaningful activities today?",
-    "homeIntoText": "This digital learing solution is designed to promote the knowledge of how you can easily find out the elderly's life story and how to support the persons Sence of Coherense (SOC) with meaningful activities in daily life.",
+    "homeIntroText": "This digital learing solution is designed to promote the knowledge of how you can easily find out the elderly's life story and how to support the persons Sence of Coherense (SOC) with meaningful activities in daily life.",
     "homeEnables": "It enables students and staff to:",
     "homeList": [
         "increase the understanding of a person-centered mindset",
-        "visualize what the person finds meaningful"
+        "visualize what the person finds meaningful",
+        "find out new things that the person is interested in",
+        "quickly and easily support the person in components that promotes quality of life",
+        "encourage the person to attend in meaningful activities in daily life"
     ],
-    "homeList1":"increase the understanding of a person-centered mindset",
-    "homeList2":"visualize what the person finds meaningful",
-    "homeList3":"find out new things that the person is interested in",
-    "homeList4":"quickly and easily support the person in components that promotes quality of life",
-    "homeList5":"encourage the person to attend in meaningful activities in daily life",
 
-    "footInfo": "This webbpage is a digital showcase developed by Prakticum, that is a part of the D-LIGHT Network that is a partnership"
+    "homePartnerships": "<p>This webbpage is a digital showcase that is a part of the Erasmus+ D-LIGHT Network that is a partnership between <a href='https://sosunord.dk/'>SOSU Nord</a> (Denmark), <a href='https://www.ttk.ee/en'>Tallinn Health Care College</a> (Estonia), <a href='https://prakticum.fi/'>Yrkesinstitutet Prakticum</a> (Finland), <a href='https://www.davinci.nl/'>ROC da Vinci College</a> (the Netherlands), and <a href='https://calasanz.eus/'>Calasanz Santurtzi S.L.</a> (Spain/Euskadi). Together, we identify innovative digital learning solutions to shared European challenges in preparing for tomorrow’s Care and Rehabilitation Services for Senior Citizens.​</p>",
+
+
+
+
+
+
+
+    "footerDevelopedBy": "The webpage which was developed by Yrkesinstitutet Prakticum, is a digital showcase within the D-LIGHT Network partnership.",
+    "footerIconsCredit": "<a href=\"https://www.flaticon.com/icons\">All icons are from Flaticon and created by the following authors: Freepik, fjstudio, Pixel perfect, Kalashnyk, SBTS2018 & Andrejs Kirma</a>",
+    "footerHTMLCredit": "<p>HTML template license by <a href=\"https://htmlcodex.com/\">HTML Codex</a></p>",
+    "footerCopyrightInfo1": "All material on this website is protected by copyright but is available for download and use by anyone in accordance with the EU's Erasmus program. You are welcome to use the material for non-commercial purposes, provided you respect the applicable copyright rules.",
+    "footerCopyrightInfo2": "We encourage the distribution and sharing of our material to benefit education and knowledge exchange across the entire EU. If you have any questions or need further information, please contact us.",
+
+
+
+
+
+
+    "lifeHeaderTitle": "Life story",
+    "lifeFirstBanner": "How well do you know the elderly person?",
+    "lifeSection0FirstHeadWhy" : "WHY IS THIS IMPORTANT?",
+    "lifeSection0FirstTextWhy": "By listening to the elderlys life story - you can better understand the elderly´s situation, what the person wants and needs. This gives you the possibility to provide meaningful choices for the elderly person in everyday life based on the person´s interests.",
+    "lifeSection0SecondHeadExpert": "The elderly person is an expert on: ",
+    "lifeSection0ListSecond": [
+        "their life, experiences and needs",
+        "own life story, personality, lifestyle",
+        "their own feelings, thoughts, habits, wishes, abilities and values"
+    ],
+    "lifeSection0ThirdHeadTools": "The Life Story gives you tools to:",
+    "lifeSection0ListThird": [
+        "find out the persons background, interests and participation",
+        "work in an individual and person-centered way",
+        "see the person behind the disease or the diagnosis",
+        "draw your attention to the things that are important in the person´s life"
+    ],
+    "lifeSection0Note": "Note!",
+    "lifeSection0FourthHeadTraining": "For training this topic the student/participant must already posses the following key skills and basic knowledge about:",
+    "lifeSection0ListFourth": [
+        "body ageing processes",
+        "theory of person-centered care",
+        "the Salutogenesis model",
+        "the positive health model or similar framework highlighting the holistic connection between physical, mental and social health"
+    ],
+    "lifeSection1Banner": "1. How do you find out the persons life story, background and interests?",
+    "lifeSection1Head": "LISTEN TO THE LIFE STORY",
+    "lifeSection1Text": "Click on the persons play button and listen to their life story.",
+    "lifeSection2Banner": "2. Fill in the Tree of Life",
+    "lifeSection2Text": "<p>1. Use the attached <a href=\"pdf/tree/en/lifetree.pdf\" target=\"_blank\">Tree of life</a> and fill in a summary of the persons life story. <br><br>2. When you have filled in the Tree of life, download the PDF to your computer and submit it to your teacher.<br><br>3. You will use the Tree of life to choose suitable activities later on.</p>",
+
+    "lifeSection3Banner": "3. What did you find out?",
+    "lifeSection3TextInfo": "Participate in a workshop where Tree of life is presented and discussed. Your teacher will give you further information of the date and time for this workshop.",
+    "lifeSection3TextListInfo": "During the workshop you discuss:",
+    "lifeSection3List": [
+        "What the person likes and enjoy",
+        "What the person doesn´t like",
+        "What the persons dreams, hopes and wishes for",
+        "What the person is afraid of",
+        "What makes the person happy",
+        "What are the persons favorite things (for example food, interests, animals and so on)",
+        "The persons personality",
+        "What is important for the person",
+        "Important life events for the person",
+        "Who is a part of the person´s network (for example family and friends)"
+    ]
+
 }

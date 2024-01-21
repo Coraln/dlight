@@ -3,62 +3,157 @@
 
 
     // Languages
-    document.addEventListener("DOMContentLoaded", function () {
-        const languageButtons = document.querySelectorAll(".flag-button");
-
-        languageButtons.forEach((button) => {
-            button.addEventListener("click", function () {
-                const lang = this.id;
-                loadLanguage(lang);
-            });
-        });
-        loadLanguage("en");
-    });
-
-
     function loadLanguage(lang) {
         console.log("Loading language:", lang);
+        localStorage.setItem('preferredLanguage', lang);
+
         fetch(`lang/${lang}.json`)
             .then((response) => response.json())
             .then((data) => {
-
                 console.log("Data loaded:", data);
-
-                // Update main content
-                document.getElementById("headerHome").textContent = data.headerHome;
-                document.getElementById("headerDropdown").textContent = data.headerDropdown;
-                document.getElementById("headerLife").textContent = data.headerLife;
-                document.getElementById("headerMeaningful").textContent = data.headerMeaningful;
-
-                document.getElementById("headerTitle").textContent = data.headerTitle;
-                document.getElementById("homeIntroHeading1").textContent = data.homeIntroHeading1;
-                document.getElementById("homeIntroHeading2").textContent = data.homeIntroHeading2;
-                document.getElementById("homeIntoText").textContent = data.homeIntoText;
-                document.getElementById("homeEnables").textContent = data.homeEnables;
-                document.getElementById("footInfo").textContent = data.footInfo;
-
-                document.getElementById("homeList1").textContent = data.homeList1;
-                document.getElementById("homeList2").textContent = data.homeList2;
-                document.getElementById("homeList3").textContent = data.homeList3;
-                document.getElementById("homeList4").textContent = data.homeList4;
-                document.getElementById("homeList5").textContent = data.homeList5;
-
-                // Handle list items
-                if (data.homeList && Array.isArray(data.homeList)) {
-                    const listContainer = document.getElementById('homeList'); // The container where the list should be rendered
-                    listContainer.innerHTML = ''; // Clear existing list items
-                    // Removed the creation of a new 'ul' since 'homeList' is already a 'ul'
-                    data.homeList.forEach(itemText => {
-                        const listItem = document.createElement('li');
-                        listItem.textContent = itemText;
-                        listContainer.appendChild(listItem); // Append listItem to listContainer directly
-                    });
-                }
-
+                updateUI(lang, data);
             })
             .catch((error) => console.error("Error loading language:", error));
     }
 
+    function updateUI(lang, data) {
+        const languageButton = document.getElementById("language-switcher");
+
+        if (languageButton) {
+            languageButton.setAttribute('data-lang', lang);
+            // Toggle flags and label
+            toggleFlagsAndLabel(lang);
+        }
+
+        // Update text content for when the text has links, etc.. 
+        Object.keys(data).forEach(key => {
+            if (key === 'homePartnerships') {
+                updateHtmlContent('dynamicHtmlContent', data[key]);
+            } else if (key === 'footerIconsCredit') {
+                updateHtmlContent('dynamicFooterContent', data[key]);
+            } else if (key === 'footerHTMLCredit') {
+                updateHtmlContent('dynamicFooterCodex', data[key]);
+            } else if (key === 'lifeSection2Text') {
+                updateHtmlContent('dynamicLifeTree', data[key]);
+            }
+            else {
+                updateTextContent(key, data[key]);
+            }
+        });
+
+        // Handle list items if available
+        if (data.homeList && Array.isArray(data.homeList)) {
+            updateListItems('homeList', data.homeList);
+        }
+        if (data.lifeSection0ListSecond && Array.isArray(data.lifeSection0ListSecond)) {
+            updateListItems('lifeSection0ListSecond', data.lifeSection0ListSecond);
+        }
+        if (data.lifeSection0ListThird && Array.isArray(data.lifeSection0ListThird)) {
+            updateListItems('lifeSection0ListThird', data.lifeSection0ListThird);
+        }
+        if (data.lifeSection0ListFourth && Array.isArray(data.lifeSection0ListFourth)) {
+            updateListItems('lifeSection0ListFourth', data.lifeSection0ListFourth);
+        }
+        if (data.lifeSection3List && Array.isArray(data.lifeSection3List)) {
+            updateListItems('lifeSection3List', data.lifeSection3List);
+        }
+
+        var pdfLink = document.getElementById("pdfLink");
+        if (pdfLink) {
+            pdfLink.setAttribute('href', `pdf/tree/${lang}/lifetree.pdf`);
+        }
+    }
+
+    function toggleFlagsAndLabel(lang) {
+        const enFlag = document.querySelector(".en-flag");
+        const svFlag = document.querySelector(".sv-flag");
+        const label = document.querySelector(".language-label");
+
+        if (lang === 'en') {
+            enFlag.style.display = 'none';
+            svFlag.style.display = 'block';
+            label.textContent = 'Svenska';
+        } else {
+            enFlag.style.display = 'block';
+            svFlag.style.display = 'none';
+            label.textContent = 'English';
+        }
+    }
+
+    function updateTextContent(id, text) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = text;
+        } else {
+            console.log(`Element not found for ID: ${id}`);
+        }
+    }
+
+    function updateHtmlContent(id, html) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerHTML = html;
+        } else {
+            console.log(`Element not found for ID: ${id}`);
+        }
+    }
+
+    function updateListItems(listId, items) {
+        const listContainer = document.getElementById(listId);
+        if (listContainer) {
+            listContainer.innerHTML = ''; // Clear existing list items
+            items.forEach(itemText => {
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                listContainer.appendChild(listItem);
+            });
+        } else {
+            console.log(`List container not found for ID: ${listId}`);
+        }
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Check for stored language preference
+        const preferredLanguage = localStorage.getItem('preferredLanguage') || 'en';
+        loadLanguage(preferredLanguage);
+
+        // Set up the language switcher button
+        const languageButton = document.getElementById("language-switcher");
+        if (languageButton) {
+
+            languageButton.addEventListener("click", function () {
+                const currentLang = languageButton.getAttribute('data-lang') || 'sv';
+                const newLang = currentLang === 'en' ? 'sv' : 'en';
+                loadLanguage(newLang);
+            });
+        }
+    });
+
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Update the content of the <span> element with the current year
+    document.getElementById("current-year").textContent = currentYear;
+
+
+
+    // Cookies
+    document.addEventListener("DOMContentLoaded", function () {
+        var acceptButton = document.getElementById("acceptCookieConsent");
+        var cookieConsentBanner = document.getElementById("cookieConsentBanner");
+
+        acceptButton.addEventListener("click", function () {
+            cookieConsentBanner.style.display = "none";
+            // Set a cookie or local storage value to remember the choice
+            document.cookie = "cookieConsent=true; max-age=86400; path=/"; // Expires in 1 day
+        });
+
+        // Optionally, check if the consent cookie is already set and hide the banner
+        if (document.cookie.indexOf("cookieConsent=true") > -1) {
+            cookieConsentBanner.style.display = "none";
+        }
+    });
 
 
 
@@ -134,98 +229,28 @@
     // Generating the people
 
     // Define a function to generate the HTML for a person
-    function generatePersonHTML(person) {
+    function generatePersonHTML(person, audioBasePath) {
+
+        // Retrieve preferred language from localStorage, default to 'en' if not set
+        const language = localStorage.getItem('preferredLanguage') || 'en';
+
         return `
-        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="rounded overflow-hidden">
-                <div>
-                    <img class="img-fluid" src="${person.imgSrc}" alt="">
-                </div>
-                <div class="team-text bg-light text-center p-2">
-                    <h5>${person.name}</h5>
-                    <audio id="${person.name}-audio" src="${person.audioSrc}" preload="auto"></audio>
-                    <button id="${person.name}-control" class="btn btn-primary">Play</button>
+            <div class="col-lg-6 wow fadeInUp audio-box" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden">
+                    <div class="text-center">
+                        <h5>${person.name}</h5>
+                        <img class="img-fluid" src="${person.imgSrc}" alt="${person.name}">
+                    </div>
+                    <div class="team-text bg-light text-center p-2">
+                        <audio id="${person.name}-audio" src="${audioBasePath}/${language}/${person.name}-audio.mp3" preload="auto" controls></audio>
+                    </div>
                 </div>
             </div>
-        </div>
-    `;
+        `;
     }
 
     window.generatePersonHTML = generatePersonHTML;
 
-    // Example usage on your page
-    /*import('./people.js').then(module => {
-        const people = module.default;
-        const container = document.getElementById('people-container');
-
-        people.forEach(person => {
-            const personHTML = generatePersonHTML(person);
-
-            const personElement = document.createElement('div');
-            personElement.innerHTML = personHTML;
-            container.appendChild(personElement);
-
-            // Add click event listener to the play/pause button
-            const audio = document.getElementById(`${person.name}-audio`);
-            const playControl = document.getElementById(`${person.name}-control`);
-
-            playControl.addEventListener('click', function () {
-                if (audio.paused) {
-                    audio.play();
-                    playControl.textContent = 'Pause';
-                } else {
-                    audio.pause();
-                    playControl.textContent = 'Play';
-                }
-            });
-        });
-    });*/
-
-
-
-
-
-    //importing from people.js
-    /*import('./people.js').then(module => {
-        const people = module.default;
-
-        const container = document.getElementById('people-container');
-
-        people.forEach(person => {
-            const personHTML = `
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div>
-                            <img class="img-fluid" src="${person.imgSrc}" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-2">
-                            <h5>${person.name}</h5>
-                            <audio id="${person.name}-audio" src="${person.audioSrc}" preload="auto"></audio>
-                            <button id="${person.name}-control" class="btn btn-primary">Play</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            const personElement = document.createElement('div');
-            personElement.innerHTML = personHTML;
-            container.appendChild(personElement);
-
-            // Add click event listener to the play/pause button
-            const audio = document.getElementById(`${person.name}-audio`);
-            const playControl = document.getElementById(`${person.name}-control`);
-
-            playControl.addEventListener('click', () => {
-                if (audio.paused) {
-                    audio.play();
-                    playControl.textContent = 'Pause';
-                } else {
-                    audio.pause();
-                    playControl.textContent = 'Play';
-                }
-            });
-        });
-    });*/
 
     //Slider control
     const slider = document.getElementById('slider');
