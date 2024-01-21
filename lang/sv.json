@@ -1,20 +1,91 @@
 {
-    "home": "Hemmet",
-    "category": "Kategorier",
-    "page1": "Sida 1",
-    "page2": "Sida 2",
-    "page3": "Sida 3",
-
-    "contentTitle": "svenskaaa",
-    "contentDescription": "This is a sample web application with language switching.",
-    "page1Title": "Page 1 Title",
-    "page1Description": "This is the content for Page 1.",
+    "headerHome": "Hem",
+    "headerDropdown": "Meningsfulla aktiviteter",
+    "headerLife": "Livsberättelse",
+    "headerMeaningful": "Meningsfulla aktiviteter",
 
 
-    "headerTitle": "!!Person-Centered activities in daily life",
+    "headerTitle": "Personcenterade aktiviteter i äldres vardag",
+    "homeIntroHeading1": "Hur bra känner du den äldre personen?",
+    "homeIntroHeading2": "Hur säkerställer du att den äldre personen får uppleva meningsfulla aktiviteter idag?",
 
-    "aboutFirstH3": "!!Do you see a need to increase the knowledge of how you can easily implement Sense of coherence (SOC) in to homecare for senior citizants today?",
-    "aboutSecondH3": "!!Do you want to guide an support eldelry in person-centred activities with meaningful choices in everyday life?",
-    "aboutText": "!!This webbpage is a digital showcase that is a part of the D-LIGHT Network that is a partnership between SOSU Nord (Denmark), Tallinn Health Care College (Estonia), Yrkesinstitutet Prakticum (Finland), ROC da Vinci College (the Netherlands), and Calasanz Santurtzi S.L. (Spain/Euskadi).​",
-    "aboutText2": "!!Together, we identify innovative digital learning solutions to shared European challenges in preparing for tomorrow’s Care and Rehabilitation Services for Senior Citizens."
+    "homeIntroText": "Detta digitala läromaterial är utvecklat för att öka kunnandet om betydelsen av den äldres livshistoria i vårdarbetet samt hur man kan främja personens Känsla av Sammanhang (KASAM) med hjälp av meningsfulla aktiviteter i vardagen.",
+    "homeEnables": "Detta digitala läromedel stödjer studerandes/vårdpersonalens kunnande och färdigheter i: ",
+
+    "homeList": [
+        "personcentrerat tankesätt",
+        "vad personen tycker är meningsfullt",
+        "att ta reda på nya saker som den äldre är intresserad av",
+        "hur man kan främja livskvalitet",
+        "meningsfulla aktiviteter i det dagliga livet"
+    ],
+
+    "homePartnerships": "<p>Denna webbsida är ett digitalt läromaterial som är skapat som en del av Erasmus+ KA2- D-LIGHT Network- projektet. Projektet är ett internationellt utvecklingsarbete med målet att stödja de behov som finns i äldreomsorgen idag samt hur digitalisering kan användas för att underlätta eller stöda äldrevården och undervisningen kring äldrevården idag. <br><br> I projektet deltog följande skolor: <a href='https://sosunord.dk/'>SOSU Nord</a> (Danmark), <a href='https://www.ttk.ee/en'>Tallinn Health Care College</a> (Estland), <a href='https://prakticum.fi/'>Yrkesinstitutet Prakticum</a> (Finland), <a href='https://www.davinci.nl/'>ROC da Vinci College</a> (Nederländerna), och <a href='https://calasanz.eus/'>Calasanz Santurtzi S.L.</a> (Spanien/Euskadi).</p>",
+
+
+
+
+
+
+
+    "footerDevelopedBy": "Webbsidan som utvecklades av Yrkesinstitutet Prakticum är en digital presentation inom D-LIGHT Network partnerskapet.",
+    "footerIconsCredit": "<a href=\"https://www.flaticon.com/icons\">Alla ikoner kommer från Flaticon och är skapade av följande författare: Freepik, fjstudio, Pixel perfect, Kalashnyk, SBTS2018 & Andrejs Kirma</a>",
+    "footerHTMLCredit": "<p>HTML mall licensierad av <a href=\"https://htmlcodex.com/\">HTML Codex</a></p>",
+    "footerCopyrightInfo1": "Allt material på denna webbplats är skyddat av upphovsrätt, men är tillgängligt för nedladdning och användning av vem som helst i enlighet med EU:s Erasmus-program. Du är välkommen att använda materialet för icke-kommersiella ändamål, förutsatt att du respekterar de gällande upphovsrättsliga reglerna.",
+    "footerCopyrightInfo2": "Vi uppmuntrar distribution och delning av vårt material för att gynna utbildning och kunskapsutbyte inom hela EU. Om du har några frågor eller behöver ytterligare information, vänligen kontakta oss.",
+
+
+
+
+
+
+
+    "lifeHeaderTitle": "Livsberättelse",
+    "lifeFirstBanner": "Hur bra känner du den äldre?",
+
+    "lifeSection0FirstHeadWhy" : "VARFÖR ÄR DETTA VIKTIGT?",
+    "lifeSection0FirstTextWhy": "Genom att lyssna på den äldres livsberättelse har du lättare att förstå hens livssituation, vad personen vill och behöver. Detta ger dig möjligheten att erbjuda meningsfulla val som baserar sig på personens intressen. ",
+    "lifeSection0SecondHeadExpert": "Den äldre personen är en expert gällande: ",
+    "lifeSection0ListSecond": [
+        "sitt eget liv, sina erfarenheter och behov",
+        "sin livshistoria, personlighet och livsstil",
+        "sina känslor, tankar, vanor, önskemål, förmågor och värderingar "
+    ],
+    "lifeSection0ThirdHeadTools": "Livshistorien ger redskap att:",
+    "lifeSection0ListThird": [
+        "få information om personens bakgrund, intressen och möjligheter till delaktighet",
+        "arbeta på ett individuellt och personcentrerat sätt ",
+        "se personen i stället för sjukdomen eller diagnosen",
+        "fästa uppmärksamhet på det som är viktigt i personens liv"
+    ],
+    "lifeSection0Note": "Observera!",
+    "lifeSection0FourthHeadTraining": "För att träna detta ämne behöver studerande redan ha följande grundläggande kunskaper: ",
+    "lifeSection0ListFourth": [
+        "Kroppens åldrande",
+        "Personcentrerad vård i äldreomsorgen",
+        "Salutogenes-modellen ",
+        "Modellen för positiv hälsa eller liknande ramverk som tar fram den holistiska kopplingen mellan fysisk, psykisk, kognitiv och social funktionsförmåga"
+    ],
+
+    "lifeSection1Banner": "1. Hur får du information om personens livsberättelse, bakgrund och intressen?",
+    "lifeSection1Head": "LYSSNA TILL LIVSBERÄTTELSEN",
+    "lifeSection1Text": "Klicka på personens ljud spelknapp och lyssna på livsberättelsen.",
+
+    "lifeSection2Banner": "2. Fyll i Livsträdet",
+    "lifeSection2Text": "<p>1. Använd det bifogade <a href=\"pdf/tree/sv/lifetree.pdf\" target=\"_blank\">Livsträdet</a> och fyll i en sammanfattning av personens livsberättelse. <br><br>2. När du har fyllt i Livsträdet, ladda ner den i PDF-format till din dator och lämna in den som svar till din lärare på skolans lärplattform. <br><br>3. Du kommer att använda Livsträdet senare för att kunna välja meningsfulla aktiviteter till personen.</p>",
+
+    "lifeSection3Banner": "3. Vad lärde du dig?",
+    "lifeSection3TextInfo": "Delta i en workshop där livsträdet presenteras och diskuteras. Din lärare kommer att ge dig ytterligare information om datum och tid för denna workshop",
+    "lifeSection3TextListInfo": "Under workshopen kommer diskuterar ni: ",
+    "lifeSection3List": [
+        "Vad personen tycker om och inte tycker om",
+        "Vad personen drömmer om, önskar, skulle vilja",
+        "Personens rädslor",
+        "Vad somgör personen lycklig",
+        "Personens favoritsaker (t.ex. mat, intressen, djur och så vidare)",
+        "Personens personlighet",
+        "Vad som är viktigt för personen",
+        "Viktiga livshändelser för personen",
+        "Vem som hör till personens nätverk (t.ex. familj och vänner)"
+    ]
 }

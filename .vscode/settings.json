@@ -3,7 +3,11 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
+<<<<<<< HEAD
     ],
     "appService.defaultWebAppToDeploy": "/subscriptions/caea89e0-7397-48cd-8726-ca1fdf0dc15d/resourceGroups/meaningfulness/providers/Microsoft.Web/sites/meaningfulness",
     "appService.deploySubpath": "."
+=======
+    ]
+>>>>>>> development
 }

@@ -1,8 +1,12 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0463FA;
+    --primary: #467bec;
     --light: #EFF5FF;
     --dark: #1B2C51;
+}
+
+.bg-primary {
+    background-color: var(--primary);
 }
 
 .fw-medium {
@@ -25,6 +29,53 @@
     z-index: 99;
 }
 
+/*** Cookie bar ***/
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.cookie-consent-banner p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#acceptCookieConsent {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/*** Audio boxes ***/
+.audio-box {
+    padding: 20px 100px;
+}
+audio {
+    width: 100%; 
+}
+
+@media (max-width: 770px) {
+    .audio-box {
+        padding: 20px 20px;
+    }
+    audio {
+        width: 80%; /* Smaller width on smaller screens */
+        /* Other adjustments as needed */
+    }
+}
 
 /*** Spinner ***/
 #spinner {
@@ -174,18 +225,45 @@
     width: 100%;
 }
 
+@media (max-width: 767px) {
+    .display-5 {
+        font-size: 25px;
+    }
+}
+
+
 .containerBox {
     display: flex;
     height: 130px;
     width: 100%;
-    background-color: #1B2C51;
     justify-content: center;
     text-align: center;
     align-items: center;
     padding: 20px;
 }
 
+.containerBoxBlue {
+    background-color: #467bec;
+}
+
+.containerBoxGreen {
+    background-color: #609248;
+}
+
+.containerBoxMain {
+    background-color: #467bec;
+    height: auto;
+    padding: 20px 0;
+    display: block;
+}
+
 .containerBox h4 {
+    z-index: 1;
+    color: white;
+    font-weight: 100;
+}
+
+.containerBoxMain h4 {
     z-index: 1;
     color: white;
     font-weight: 100;
@@ -284,14 +362,35 @@
 }
 
 .header-life {
-    background: url(../img/lifehistory.jpg) top center no-repeat;
+    background: url(../img/lifestory.jpg) top center no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 .header-meaningful {
-    background: url(../img/lifehistory.jpg) top center no-repeat;
+    background: url(../img/bannerMeaningful.jpg) top center no-repeat;
     background-size: cover;
 }
+
+.header-home {
+    background: url(../img/banner.jpg) top center no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+}
+
+@media (max-width: 768px) {
+    .header-home  {
+        min-height: 20vh; /* Slightly larger for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-home  {
+        min-height: 10vh; /* Even larger for very small screens */
+    }
+}
+
+
 
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
@@ -324,6 +423,45 @@
     width: 140px;
 }
 
+/*** Languages ***/
+.language-switcher {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-text p {
+    color: white;
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.flag-button {
+    cursor: pointer;
+    display: inline-block;
+    /* changed from flex to inline-block for stacking */
+}
+
+.flag-button img {
+    width: auto;
+    /* Bootstrap's img-fluid class will override this as needed */
+    height: 100px;
+    /* or whatever size you prefer */
+    margin-bottom: 5px;
+    /* space between flag and text */
+}
+
+.flag-button span {
+    color: white;
+}
+
+@media (max-width: 767px) {
+
+    .flag-button {
+        padding-top: 20px;
+        max-width: 50%;
+    }
+}
 
 /*** Feature ***/
 @media (min-width: 992px) {
@@ -347,6 +485,16 @@
         padding-left: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
+
+
+/*** Life ***/
+.imgThumb {
+    width: 100%; /* Image will occupy 100% width of its container */
+    height: auto; /* Height will adjust automatically */
+    max-height: 250px; /* Maximum height */
+    object-fit: contain; /* This ensures the aspect ratio is maintained */
+}
+
 
 
 /*** Team ***/
@@ -519,6 +667,396 @@
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: var(--dark);
+}
+
+
+/*** Checkboxes triangle ***/
+.icon-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.icon-image {
+    filter: brightness(120) saturate(120%) invert(0.6);
+    transition: filter 0.3s;
+    max-width: 100px;
+}
+
+input[type="checkbox"]:checked+label .icon-image {
+    filter: none;
+}
+
+.icon-label {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .icon-row {
+        flex-wrap: wrap;
+        /* Allow wrapping of items */
+    }
+
+    .checkbox-container {
+        flex: 0 0 48%;
+        /* Adjust to ensure two items per row */
+        margin: 0 1%;
+        /* Adjust margins to fit the screen */
+    }
+}
+
+@media (max-width: 420px) {
+    .icon-image {
+        max-width: 80px;
+        /* Smaller max-width for icons on smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*** Triangle ***/
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid #3498db;
+    position: relative;
+    margin-top: 30px;
+}
+
+#activityList {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.activity-button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*** Triangle icons ***/
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.icon {
+    padding: 20px;
+    text-align: center;
+}
+
+.icon img {
+    width: 50px;
+    /* You can set the size as you prefer */
+    height: auto;
+}
+
+@media (max-width: 360px) {
+    .icon-container .icon img {
+        max-width: 100%; /* Adjust the icon size */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .icon-container .col p {
+        font-size: 0.8rem; /* Decrease font size */
+    }
+
+    /* If needed, adjust the padding or margin of the columns */
+    .icon-container .col {
+        padding: 5px; /* Example padding adjustment */
+    }
+}
+
+/*** Triangle NEW ***/
+.parent {
+    position: relative;
+    margin-top: 2rem;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    height: fit-content;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+/**
+.imi {
+    margin-top: -25px;
+    padding-left: 10px;
+    width: 450px;
+}
+
+.one {
+    transform: rotate(237deg);
+    top: 288px;
+    left: 23px;
+    width: 205px;
+}
+
+.sec {
+    transform: rotate(123deg);
+    right: 22px;
+    top: 287px;
+
+    width: 205px;
+}
+*/
+
+/** TRIANGEL MED IKONER UTANFÖR **/
+.imi {
+    margin-top: -25px;
+    padding-left: 10px;
+    width: 450px;
+}
+
+.one {
+    transform: rotate(237deg);
+    top: 282px;
+    left: 42.4px;
+    width: 185px;
+}
+
+.sec {
+    transform: rotate(123deg);
+    right: 41px;
+    top: 282px;
+    width: 185px;
+}
+
+.in {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.in1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.in2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.zero {
+    left: 50%;
+    top: 118px;
+    transform: translateX(-50%);
+    width: 205px;
+}
+
+.a {
+    color: #333;
+    position: absolute;
+    top: -39px;
+    left: 45%;
+    font-weight: 600;
+
+}
+
+.f {
+    color: #333;
+    position: absolute;
+    right: -61px;
+    bottom: 84px;
+    font-weight: 600;
+}
+
+.t {
+    color: #333;
+    position: absolute;
+    bottom: 84px;
+    left: -18px;
+    font-weight: 600;
+}
+
+.ap {
+    background: black;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    height: 4px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    position: absolute;
+    width: 100%;
+}
+
+/* Styles for .ap.slider class */
+.ap.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0px;
+    /* Set the track height to 1px */
+    background: #ddd;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    opacity: 1;
+    /* Make the track invisible */
+}
+
+/* Track styling for WebKit browsers */
+input[type=range]::-webkit-slider-runnable-track {
+    background: transparent;
+    /* Transparent track */
+    opacity: 1;
+    /* Make the track fully transparent */
+}
+
+/* Thumb styling for WebKit browsers */
+.ap.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    /* Smaller thumb width */
+    height: 25px;
+    /* Smaller thumb height */
+    background: var(--primary);
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 50%;
+    /* Optional: makes the thumb circular */
+    opacity: 1;
+    /* Ensure the thumb is fully visible */
+}
+
+/* Additional thumb styling for Firefox */
+.ap.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--primary);
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+/* Additional thumb styling for IE/Edge */
+.ap.slider::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--primary);
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+
+@media (max-width:600px) {
+    .f {
+        right: 20px;
+        bottom: 0px;
+        font-weight: 600;
+        font-style: 0.8rem;
+    }
+
+    .t {
+        bottom: 0px;
+        left: 30px;
+        font-weight: 600;
+        font-style: 0.8rem;
+    }
+}
+
+
+@media (max-width:452px) {
+    .parent {
+        width: 100%;
+        padding-top: 0%;
+    }
+
+    .imi {
+        width: 140%;
+        margin: -20%;
+    }
+
+    .imparent {
+        width: 220px !important;
+    }
+
+    .zero {
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
+        width: 132px;
+    }
+
+    .sec {
+        width: 120px;
+        right: -15px;
+        top: 165px;
+    }
+
+    .one {
+        width: 120px;
+        top: 165px;
+        left: -15px;
+    }
+
+    .a {
+        top: -56px !important;
+        left: 39% !important;
+
+    }
+
+    .f,
+    .t {
+        bottom: -20px;
+    }
 }
 
 
