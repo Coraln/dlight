@@ -37,9 +37,11 @@
     width: 100%;
     background-color: #f4f4f4;
     padding: 10px;
-    text-align: center;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
     z-index: 1000; /* Ensure it appears above other content */
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically center-aligns items */
+    justify-content: center; /* Horizontally centers content */
 }
 
 .cookie-consent-banner p {

@@ -35,6 +35,14 @@
                 updateHtmlContent('dynamicFooterCodex', data[key]);
             } else if (key === 'lifeSection2Text') {
                 updateHtmlContent('dynamicLifeTree', data[key]);
+            } else if (key === 'meaningfulSection3Text') {
+                updateHtmlContent('dynamicTriangleText', data[key]);
+            } else if (key === 'meaningfulSection3Time') {
+                updateHtmlContent('dynamicTriangleTime', data[key]);
+            } else if (key === 'meaningfulSection3Fellowship') {
+                updateHtmlContent('dynamicTriangleFellowship', data[key]);
+            } else if (key === 'meaningfulSection3Activity') {
+                updateHtmlContent('dynamicTriangleActivity', data[key]);
             }
             else {
                 updateTextContent(key, data[key]);
@@ -56,6 +64,9 @@
         }
         if (data.lifeSection3List && Array.isArray(data.lifeSection3List)) {
             updateListItems('lifeSection3List', data.lifeSection3List);
+        }
+        if (data.meaningfulSection0List && Array.isArray(data.meaningfulSection0List)) {
+            updateListItems('meaningfulSection0List', data.meaningfulSection0List);
         }
 
         var pdfLink = document.getElementById("pdfLink");

@@ -111,7 +111,7 @@ import('./activities.js').then(module => {
             return `<button class="activity-button" onclick="openPDF('${pdfPath}')">${activity.name}</button>`;
         });
 
-        activityListContainer.innerHTML = `<h3>Recommended Activities:</h3>${activityList.join('')}`;
+        activityListContainer.innerHTML = `<h4></h4>${activityList.join('')}`;
     }
 
     window.openPDF = function (pdfPath) {

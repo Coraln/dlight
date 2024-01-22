@@ -4,6 +4,9 @@
     "headerLife": "Livsberättelse",
     "headerMeaningful": "Meningsfulla aktiviteter",
 
+    "cookieText": "Vi använder kakor för att förbättra din upplevelse. ",
+    "acceptCookieConsent": "Godta",
+
 
     "headerTitle": "Personcenterade aktiviteter i äldres vardag",
     "homeIntroHeading1": "Hur bra känner du den äldre personen?",
@@ -87,5 +90,60 @@
         "Vad som är viktigt för personen",
         "Viktiga livshändelser för personen",
         "Vem som hör till personens nätverk (t.ex. familj och vänner)"
-    ]
+    ],
+
+
+
+
+
+    "meaningfulHeaderTitle": "Meningsfulla aktiviteter",
+    "meaningfulFirstBanner": "Hur säkerställer du att den äldre personen får uppleva meningsfulla aktiviteter idag?",
+    "meaningfulSection0FirstHeadWhy": "VARFÖR ÄR DETTA VIKTIGT?",
+    "meaningfulSection0FirstTextWhy": "Genom att föreslå meningsfulla aktiviteter kan du främja personens Känsla av Sammanhang (KASAM). När du lyssnar på hur personen mår och känner sig idag, så kan du beakta den äldres resurser och förmågor och genom detta föreslå aktiviteter som är lämpliga och känns meningsfulla.",
+    "meaningfulSection0Note": "Observera!",
+    "meaningfulSection0SecondHeadTraining": "För att träna detta ämne behöver studerande redan ha följande grundläggande kunskaper:",
+    "meaningfulSection0List": [
+        "De två första examensdelarna: ", 
+        "•   Arbete som främjar tillväxt och delaktighet",
+        "•   Arbete som upprätthåller välbefinnande och funktionsförmåga",
+        "Kroppens åldrande",
+        "Personcentrerad vård i äldreomsorgen",
+        "Salutogenes-modellen",
+        "Modellen för positiv hälsa eller liknande ramverk som tar fram den holistiska kopplingen mellan fysisk, psykisk, kognitiv och social funktionsförmåga",
+        "Att främja ett meningsfullt liv med hjälp av metoder som ökar delaktighet",
+        "Bedömning av äldres funktionsförmåga samt att handleda till funktionsförmåga med ett resursorienterat arbetssätt"
+    ],
+
+    "meaningfulSection1Banner": "1. Välj meningsfulla aktiviteter på basen av den äldres intressen",
+    "meaningfulSection1Head": "VÄLJ AKTIVITETER",
+    "meaningfulSection1Text": "När du har fyllt i Livsträdet, kan du välja meningsfulla aktiviteter på basen av den information som du har fått från personens livsberättelse.",
+    "meaningfulSection1SecondHead": "Välj lämpliga alternativ genom att klicka på de teman som önskas:",
+    "meaningfulSection1SecondText": "Efter att du har valt, kommer nätsidan att föreslå idéer till möjliga aktiviteter inom de valda temaområdena. ",
+    "meaningfulIcon1":"Rörelse & avslappning",
+    "meaningfulIcon2":"Pussel & tankenötter",
+    "meaningfulIcon3":"Mat & dryck",
+    "meaningfulIcon4":"Natur & miljö",
+    "meaningfulIcon5":"Musik",
+    "meaningfulIcon6":"Litteratur",
+    "meaningfulIcon7":"Underhållning",
+    "meaningfulIcon8":"Kreativitet & hantverk",
+
+    "meaningfulSection2Banner":"2. Välj en lämplig aktivitet, som baserar sig på hur personen mår och orkar idag:",
+    "meaningfulSection2Head": "LYSSNA PÅ PERSONEN",
+    "meaningfulSection2Text": "Klicka på personens ljud spelknapp och lyssna: Hur mår personen idag?",
+
+    "meaningfulSection3Banner": "Vilken aktivitet föreslår du?",
+    "meaningfulSection3Text": "<p>Beroende på personens ork, humör och mående, vad är viktigt just idag? <br><br>När du har beaktat personens humör kommer näsidan att filtrera aktiviteterna enligt valda parametrar.<br><br>Du får lämpliga aktiviteter genom att klicka på parametrarna:</p>",
+    "meaningfulSection3Time": "<p><b>kort</b> eller <b>lång</b> tid</p>",
+    "meaningfulSection3Fellowship": "<p><b>ensam</b> eller <b>i grupp</b></p>",
+    "meaningfulSection3Activity": "<p><b>avslappnande</b> eller <b>aktiverande</b></p>",
+    "triangleActivity": "Aktivitet",
+    "triangleTime": "Tid",
+    "triangleFellowship": "Gemenskap",
+
+    "meaningfulSection4Banner": "4. Välj och föreslå en lämplig aktivitet för personen",
+    "meaningfulSection4Text1": "Välj en aktivitet som du skulle föreslå åt personen. Ladda ner ditt förslag som ett PDF-dokumentet på din dator och lämna in den som svar till din lärare på skolans lärplattform. Skriv i ditt svar även dina egna reflektioner: Varför skulle du föreslå denna aktivitet till personen?",
+    "meaningfulSection4Text2": "Delta i en workshop där meningsfulla aktiviteter presenteras och diskuteras. Din lärare kommer att ge dig ytterligare information om datum och tid för denna workshop. ",
+
+    "meaningfulSection4Activity": "Rekommenderade aktiviteter:"
 }

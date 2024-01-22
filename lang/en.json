@@ -4,6 +4,9 @@
     "headerLife": "Life story",
     "headerMeaningful": "Meaningful activities",
 
+    "cookieText": "We are using cookies to improve your experience. ",
+    "acceptCookieConsent": "Accept",
+
     "headerTitle": "Person-Centered activities in daily life",
     "homeIntroHeading1": "How well do you know the elderly person?",
     "homeIntroHeading2": "How do you make sure that the person can have meaningful activities today?",
@@ -81,6 +84,58 @@
         "What is important for the person",
         "Important life events for the person",
         "Who is a part of the person´s network (for example family and friends)"
-    ]
+    ],
+
+
+
+
+    "meaningfulHeaderTitle": "Meaningful activities",
+    "meaningfulFirstBanner": "How do you make sure that the person can have meaningful activities today?",
+
+    "meaningfulSection0FirstHeadWhy": "WHY IS THIS IMPORTANT?",
+    "meaningfulSection0FirstTextWhy": "By suggesting meaningful activities, you can promote the persons Sence of Cohesence (SOC). When you listen to the persons feelings and mood today, you will be able to take into account the elderlys daily resourses and thereby provide activities that are suitable and feels important for the person.",
+    "meaningfulSection0Note": "Note!",
+    "meaningfulSection0SecondHeadTraining": "For training this topic the student/participant must already posses the following key skills and basic knowledge about:",
+    "meaningfulSection0List": [
+        "body ageing processes",
+        "theory of person-centered care",
+        "the Salutogenesis model",
+        "the positive health model or similar framework highlighting the holistic connection between physical, mental and social health",
+        "how to guide daily functioning with a resource-oriented approach",
+        "how to promote a meaningful life by using methods that increase participation"
+    ],
+
+    "meaningfulSection1Banner": "1. Choose meaningful activites based on the elderly person´s interests",
+    "meaningfulSection1Head": "CHOOSE ACTIVITIES",
+    "meaningfulSection1Text": "Once you have completed the Three of life, choose meaningful activities based on your information from the person´s life story.",
+    "meaningfulSection1SecondHead": "Choose different options by clicking on the themes:",
+    "meaningfulSection1SecondText": "When you have chosen, the webbpage will give you ideas for possible activities within the chosen themes.",
+    "meaningfulIcon1":"Movement & relaxation",
+    "meaningfulIcon2":"Puzzles & brainteasers",
+    "meaningfulIcon3":"Food & beverages",
+    "meaningfulIcon4":"Nature & environment",
+    "meaningfulIcon5":"Music",
+    "meaningfulIcon6":"Literature",
+    "meaningfulIcon7":"Entertainmen",
+    "meaningfulIcon8":"Creativity & handicraft",
+
+    "meaningfulSection2Banner":"2. Choose an activity for today, based on the person´s mood:",
+    "meaningfulSection2Head": "LISTEN TO THE PERSON",
+    "meaningfulSection2Text": "Click on the persons play button and listen: How does the person feel today?",
+
+    "meaningfulSection3Banner": "3. Which activity do you suggest for the person?",
+    "meaningfulSection3Text": "<p>Based on the person´s mood today, what is important for the person? <br><br>When you have taken into account the persons mood, the webbpage will filter the activities by chosen parameters.<br><br>Get suitable activities by clicking on the parameters:</p>",
+    "meaningfulSection3Time": "<p><b>short</b> or <b>long</b> time</p>",
+    "meaningfulSection3Fellowship": "<p><b>alone</b> or <b>together</b></p>",
+    "meaningfulSection3Activity": "<p><b>calming</b> or <b>activating</b></p>",
+    "triangleActivity": "Activity",
+    "triangleTime": "Time",
+    "triangleFellowship": "Fellowship",
+
+    "meaningfulSection4Banner": "4. Choose and suggest one suitable activity for the person",
+    "meaningfulSection4Text1": "Choose one activity, that you would suggest for the person. Download the PDF to your computer and submit it to your teacher with your own reflections included (why would you suggest this activity for the person?).",
+    "meaningfulSection4Text2": "Participate in a workshop where meaningful activities are presented and discussed. Your teacher will give you further information of the date and time for this workshop.",
+
+    "meaningfulSection4Activity": "Recommended Activities:"
 
 }
