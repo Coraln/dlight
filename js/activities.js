@@ -3,10 +3,10 @@ const activities = {
 
     
     movement: [
-        { name: "Relaxation through music", activity: [1], fellowship: [1], time: [1] },
+        { name: "Relaxation through Music", activity: [1], fellowship: [1], time: [1] },
         { name: "Breathing exercises to a story", activity: [1], fellowship: [1, 2], time: [1] },
         { name: "Exercises for elderly", activity: [2], fellowship: [1, 2], time: [1] },
-        { name: "Massage and storytelling - Autumn Leaves", activity: [1], fellowship: [1, 2], time: [1] },
+        { name: "Massage and storytelling - Autumn leaves", activity: [1], fellowship: [1, 2], time: [1] },
         { name: "Gymnastics with small equipment", activity: [2], fellowship: [1, 2], time: [2] },
         { name: "Chair exercises and storytelling", activity: [2], fellowship: [2], time: [1] },
         { name: "Sitting on the chair and stand up", activity: [2], fellowship: [1], time: [1] },
@@ -27,7 +27,7 @@ const activities = {
         { name: "Balloon badminton", activity: [2], fellowship: [2], time: [1, 2] },
         { name: "Outdoor relaxation", activity: [1], fellowship: [1], time: [1] },
         { name: "Walking group for elderly", activity: [2], fellowship: [2], time: [1, 2] },
-        { name: "Walk outside and sit down for a cup of coffee/tea", activity: [2], fellowship: [1, 2], time: [2] },
+        { name: "Walk outside and sit down for a cup of coffee or tea", activity: [2], fellowship: [1, 2], time: [2] },
         { name: "Walk with confidence", activity: [2], fellowship: [1], time: [1] },
         { name: "Massage and storytelling - Bonfire", activity: [1], fellowship: [1, 2], time: [1] },
         { name: "Massage and storytelling - Weather massage", activity: [1], fellowship: [1, 2], time: [1] }
@@ -39,7 +39,7 @@ const activities = {
         { name: "Crosswords", activity: [2], fellowship: [1], time: [1, 2] },
         { name: "Memory", activity: [2], fellowship: [1, 2], time: [1, 2] },
         { name: "Quiz", activity: [2], fellowship: [2], time: [1, 2] },
-        { name: "Puzzle", activity: [2], fellowship: [1], time: [1, 2] },
+        { name: "Puzzles", activity: [2], fellowship: [1], time: [1, 2] },
         { name: "Memories through old photos", activity: [2], fellowship: [2], time: [1, 2] },
         { name: "Memories through fragrances", activity: [2], fellowship: [2], time: [1, 2] },
         { name: "Memories through music", activity: [2], fellowship: [2], time: [1, 2] },
@@ -76,18 +76,18 @@ const activities = {
         { name: "Memories through nature and environment", activity: [1], fellowship: [2], time: [1, 2] },
         { name: "Take a walk to meaningful places", activity: [2], fellowship: [1], time: [1, 2] },
         { name: "Traveling digitally", activity: [1], fellowship: [1], time: [2] },
-        { name: "Relax outdoors", activity: [1], fellowship: [1], time: [1] }
+        { name: "Outdoor relaxation", activity: [1], fellowship: [1], time: [1] }
     ],
 
     music: [
         { name: "Listen to classical music", activity: [1], fellowship: [1], time: [1] },
         { name: "Memories through music", activity: [2], fellowship: [2], time: [1, 2] },
-        { name: "Move to music", activity: [2], fellowship: [2], time: [1] },
+        { name: "Move to Music", activity: [2], fellowship: [2], time: [1] },
         { name: "Sing to music", activity: [2], fellowship: [1], time: [1] },
         { name: "Chair dance", activity: [2], fellowship: [2], time: [2] },
         { name: "Disco dance", activity: [2], fellowship: [2], time: [1, 2] },
         { name: "Sing along", activity: [2], fellowship: [2], time: [2] },
-        { name: "Relaxation through music", activity: [1], fellowship: [1], time: [1] },
+        { name: "Relaxation through Music", activity: [1], fellowship: [1], time: [1] },
         { name: "Music review panel", activity: [2], fellowship: [2], time: [2] },
         { name: "Breathing exercises to soothing music", activity: [1], fellowship: [1], time: [1] },
         { name: "Play instruments", activity: [2], fellowship: [2], time: [1, 2] },
@@ -114,7 +114,7 @@ const activities = {
         { name: "Theatre", activity: [1, 2], fellowship: [1, 2], time: [2] },
         { name: "Movie", activity: [1, 2], fellowship: [2], time: [2] },
         { name: "Look at a classical concert on TV", activity: [1], fellowship: [1], time: [2] },
-        { name: "Travelling digitally", activity: [1], fellowship: [1], time: [2] },
+        { name: "Traveling digitally", activity: [1], fellowship: [1], time: [2] },
         { name: "Participate in an art exhibition virtually", activity: [2], fellowship: [1, 2], time: [2] },
         { name: "Video calling", activity: [2], fellowship: [1], time: [1, 2] }
     ],
