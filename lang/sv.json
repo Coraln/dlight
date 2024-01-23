@@ -36,7 +36,7 @@
     "footerHTMLCredit": "<p>HTML mall licensierad av <a href=\"https://htmlcodex.com/\">HTML Codex</a></p>",
     "footerCopyrightInfo1": "Allt material på denna webbplats är skyddat av upphovsrätt, men är tillgängligt för nedladdning och användning av vem som helst i enlighet med EU:s Erasmus-program. Du är välkommen att använda materialet för icke-kommersiella ändamål, förutsatt att du respekterar de gällande upphovsrättsliga reglerna.",
     "footerCopyrightInfo2": "Vi uppmuntrar distribution och delning av vårt material för att gynna utbildning och kunskapsutbyte inom hela EU. Om du har några frågor eller behöver ytterligare information, vänligen kontakta oss.",
-
+    "footerDownload": "<p>Ladda ner projektet & läs dokumentationen <a href='https://github.com/Coraln/dlight' class='text-decoration-underline'>härifrån</a>, filerna har öppen källkod.</p>",
 
 
 
@@ -75,7 +75,7 @@
     "lifeSection1Text": "Klicka på personens ljud spelknapp och lyssna på livsberättelsen.",
 
     "lifeSection2Banner": "2. Fyll i Livsträdet",
-    "lifeSection2Text": "<p>1. Använd det bifogade <a href=\"pdf/tree/sv/lifetree.pdf\" target=\"_blank\">Livsträdet</a> och fyll i en sammanfattning av personens livsberättelse. <br><br>2. När du har fyllt i Livsträdet, ladda ner den i PDF-format till din dator och lämna in den som svar till din lärare på skolans lärplattform. <br><br>3. Du kommer att använda Livsträdet senare för att kunna välja meningsfulla aktiviteter till personen.</p>",
+    "lifeSection2Text": "<p>1. Använd det bifogade <a href=\"pdf/tree/sv/lifetree.pdf\" target=\"_blank\" class='text-decoration-underline'>Livsträdet</a> och fyll i en sammanfattning av personens livsberättelse. <br><br>2. När du har fyllt i Livsträdet, ladda ner den i PDF-format till din dator och lämna in den som svar till din lärare på skolans lärplattform. <br><br>3. Du kommer att använda Livsträdet senare för att kunna välja meningsfulla aktiviteter till personen.</p>",
 
     "lifeSection3Banner": "3. Vad lärde du dig?",
     "lifeSection3TextInfo": "Delta i en workshop där livsträdet presenteras och diskuteras. Din lärare kommer att ge dig ytterligare information om datum och tid för denna workshop",

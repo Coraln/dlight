@@ -1,5 +1,5 @@
 // activities.js
-const activities = {
+const activities_en = {
 
     
     movement: [
@@ -65,6 +65,11 @@ const activities = {
     ],
 
     environment: [
+        { name: "Enjoy the view", activity: [1], fellowship: [1], time: [1] },
+        { name: "Virtual nature experiences", activity: [1], fellowship: [1], time: [1, 2] },
+        { name: "Virtual nature experiences together with others", activity: [1], fellowship: [2], time: [1, 2] },       
+        { name: "Walk in the nature", activity: [2], fellowship: [1, 2], time: [1, 2] },
+        { name: "Nature Bingo", activity: [2], fellowship: [2], time: [1, 2] },
         { name: "By the bonfire", activity: [1], fellowship: [2], time: [2] },
         { name: "Enjoy and discuss the view together", activity: [1], fellowship: [2], time: [1, 2] },
         { name: "Watching birds virtually", activity: [1], fellowship: [2], time: [1, 2] },
@@ -133,4 +138,5 @@ const activities = {
     // Add more categories as needed
 };
 
-export default activities;
+
+export default activities_en;

@@ -33,6 +33,8 @@
                 updateHtmlContent('dynamicFooterContent', data[key]);
             } else if (key === 'footerHTMLCredit') {
                 updateHtmlContent('dynamicFooterCodex', data[key]);
+            } else if (key === 'footerDownload') {
+                updateHtmlContent('dynamicFooterDownload', data[key]);
             } else if (key === 'lifeSection2Text') {
                 updateHtmlContent('dynamicLifeTree', data[key]);
             } else if (key === 'meaningfulSection3Text') {

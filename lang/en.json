@@ -33,7 +33,7 @@
     "footerHTMLCredit": "<p>HTML template license by <a href=\"https://htmlcodex.com/\">HTML Codex</a></p>",
     "footerCopyrightInfo1": "All material on this website is protected by copyright but is available for download and use by anyone in accordance with the EU's Erasmus program. You are welcome to use the material for non-commercial purposes, provided you respect the applicable copyright rules.",
     "footerCopyrightInfo2": "We encourage the distribution and sharing of our material to benefit education and knowledge exchange across the entire EU. If you have any questions or need further information, please contact us.",
-
+    "footerDownload": "<p>Download the project & read the documentations <a href='https://github.com/Coraln/dlight' class='text-decoration-underline'>here</a>, open-source files.</p>",
 
 
 
@@ -68,7 +68,7 @@
     "lifeSection1Head": "LISTEN TO THE LIFE STORY",
     "lifeSection1Text": "Click on the persons play button and listen to their life story.",
     "lifeSection2Banner": "2. Fill in the Tree of Life",
-    "lifeSection2Text": "<p>1. Use the attached <a href=\"pdf/tree/en/lifetree.pdf\" target=\"_blank\">Tree of life</a> and fill in a summary of the persons life story. <br><br>2. When you have filled in the Tree of life, download the PDF to your computer and submit it to your teacher.<br><br>3. You will use the Tree of life to choose suitable activities later on.</p>",
+    "lifeSection2Text": "<p>1. Use the attached <a href=\"pdf/tree/en/lifetree.pdf\" target=\"_blank\" class='text-decoration-underline'>Tree of life</a> and fill in a summary of the persons life story. <br><br>2. When you have filled in the Tree of life, download the PDF to your computer and submit it to your teacher.<br><br>3. You will use the Tree of life to choose suitable activities later on.</p>",
 
     "lifeSection3Banner": "3. What did you find out?",
     "lifeSection3TextInfo": "Participate in a workshop where Tree of life is presented and discussed. Your teacher will give you further information of the date and time for this workshop.",
@@ -116,7 +116,7 @@
     "meaningfulIcon4":"Nature & environment",
     "meaningfulIcon5":"Music",
     "meaningfulIcon6":"Literature",
-    "meaningfulIcon7":"Entertainmen",
+    "meaningfulIcon7":"Entertainment",
     "meaningfulIcon8":"Creativity & handicraft",
 
     "meaningfulSection2Banner":"2. Choose an activity for today, based on the person´s mood:",
