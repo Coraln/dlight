@@ -1,7 +1,7 @@
-// page1.js
+// life.js
 
 
-import('./people.js').then(module => {
+import('../../content/people.js').then(module => {
     const people = module.default;
     const container = document.getElementById('people-container');
 

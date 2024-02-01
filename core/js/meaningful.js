@@ -1,9 +1,9 @@
-// page2.js
+// meaningful.js
 console.log('Page 2 script is running');
 
 
 // People audio files etc.
-import('./people.js').then(module => {
+import('../../content/people.js').then(module => {
     const people = module.default;
     const container = document.getElementById('people-container');
 
@@ -18,7 +18,7 @@ import('./people.js').then(module => {
 // Triangle 
 document.addEventListener("DOMContentLoaded", () => {
     const lang = localStorage.getItem('preferredLanguage') || 'en';
-    import(`./activities_${lang}.js`).then(module => {
+    import(`/content/activities_${lang}.js`).then(module => {
         const activities = module.default;
 
         const timeSlider = document.getElementById("timeSlider");
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const filteredActivitiesBySliders = filterActivitiesBySliders(filteredActivities, selectedTime, selectedActivity, selectedFellowship);
 
             const activityList = filteredActivitiesBySliders.map(activity => {
-                const pdfPath = `pdf/${lang}/${activity.name}.pdf`;
+                const pdfPath = `/content/pdf/${lang}/${activity.name}.pdf`;
                 return `<button class="activity-button" onclick="openPDF('${pdfPath}')">${activity.name}</button>`;
             });
 

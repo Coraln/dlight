@@ -7,7 +7,7 @@
         console.log("Loading language:", lang);
         localStorage.setItem('preferredLanguage', lang);
 
-        fetch(`lang/${lang}.json`)
+        fetch(`/content/lang/${lang}.json`)
             .then((response) => response.json())
             .then((data) => {
                 console.log("Data loaded:", data);
@@ -73,7 +73,7 @@
 
         var pdfLink = document.getElementById("pdfLink");
         if (pdfLink) {
-            pdfLink.setAttribute('href', `pdf/tree/${lang}/lifetree.pdf`);
+            pdfLink.setAttribute('href', `/content/pdf/tree/${lang}/lifetree.pdf`);
         }
     }
 
@@ -136,7 +136,7 @@
         if (languageButton) {
 
             languageButton.addEventListener("click", function () {
-                const currentLang = languageButton.getAttribute('data-lang') || 'sv';
+                const currentLang = languageButton.getAttribute('data-lang') || 'en';
                 const newLang = currentLang === 'en' ? 'sv' : 'en';
                 loadLanguage(newLang);
             });
@@ -209,36 +209,6 @@
     });
 
 
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-    // Date and time picker
-    $('.date').datetimepicker({
-        format: 'L'
-    });
-    $('.time').datetimepicker({
-        format: 'LT'
-    });
-
-
-    // Header carousel
-    $(".header-carousel").owlCarousel({
-        autoplay: false,
-        animateOut: 'fadeOutLeft',
-        items: 1,
-        dots: true,
-        loop: true,
-        nav: true,
-        navText: [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
-    });
-
     // Generating the people
 
     // Define a function to generate the HTML for a person
@@ -252,10 +222,10 @@
                 <div class="rounded overflow-hidden">
                     <div class="text-center">
                         <h5>${person.name}</h5>
-                        <img class="img-fluid" src="${person.imgSrc}" alt="${person.name}">
+                        <img class="img-fluid" src="/content/${person.imgSrc}" alt="${person.name}">
                     </div>
                     <div class="team-text bg-light text-center p-2">
-                        <audio id="${person.name}-audio" src="${audioBasePath}/${language}/${person.name}-audio.mp3" preload="auto" controls></audio>
+                        <audio id="${person.name}-audio" src="/content/${audioBasePath}/${language}/${person.name}-audio.mp3" preload="auto" controls></audio>
                     </div>
                 </div>
             </div>
@@ -263,38 +233,6 @@
     }
 
     window.generatePersonHTML = generatePersonHTML;
-
-
-    //Slider control
-    const slider = document.getElementById('slider');
-    const sliderValueDisplay = document.getElementById('sliderValue');
-
-    // Update the displayed value when the slider value changes
-    slider.addEventListener('input', () => {
-        sliderValueDisplay.textContent = `Selected Value: ${slider.value}`;
-    });
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1000,
-        center: true,
-        dots: false,
-        loop: true,
-        nav: true,
-        navText: [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            }
-        }
-    });
 
 
 })(jQuery);

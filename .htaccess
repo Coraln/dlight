@@ -1,3 +1,14 @@
 <FilesMatch "\.(json)$">
   Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
 </FilesMatch>
+
+RewriteEngine On
+
+# If the request is not for a valid directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# If the request is not for a valid file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite the URL to the /core/html/ directory
+RewriteRule ^(.+)$ /core/html/$1.html [L,QSA]
