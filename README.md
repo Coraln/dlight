@@ -1,3 +1,5 @@
+_Read the PDF for a more visible pleasing documentation:_ [here](https://github.com/Coraln/dlight/blob/main/d%20light%20documentation.pdf) 
+
 # D- Light Content Management Guide
 
 Welcome to the content management guide for your website. This document is designed to help non-technical users update and manage the content within the "content" directory of the website. Please follow these instructions carefully to ensure that your website remains functional and up to date.
